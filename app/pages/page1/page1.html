@@ -1,0 +1,16 @@
+<ion-navbar *navbar>
+  <ion-title>Sandwiches for today</ion-title>
+</ion-navbar>
+
+<ion-content padding class="page1">
+
+	<ion-list>
+      <ion-item *ngFor="#item of items" (click)="itemSelected(item)">
+          <img style="width:60px; height:60px;" item-left src="{{item.uri}}" />
+      		<h2>{{item.title}}</h2>
+      		<p>{{item.ingredients}}</p>
+      		<h2 item-right>test</h2>
+      </ion-item>
+	</ion-list>
+
+</ion-content>
