@@ -1,7 +1,8 @@
 <ion-content padding>
-  <h2>{{item.title}}</h2>
-  <p>{{item.ingredients}}</p>
-  <img src="{{item.uri}}"/>
+  <h2>{{item.name}}</h2>
+  <p>{{item.description}}</p>
+  <p class="supplier">{{item.provider.name}}</p>
+  <img src="http://broodjesapi.tuihackfridays.com{{item.image}}"/>
   <br/>
 <button (click)="close()">Close</button>
 </ion-content>`
