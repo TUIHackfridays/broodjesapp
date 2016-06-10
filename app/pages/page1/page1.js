@@ -14,7 +14,7 @@ export class Page1 {
   constructor(nav, http) {
     this.http = http;
 
-    var result = http.get("http://broodjesapi.tuihackfridays.com/api/1/sandwich" ).subscribe(
+    var result = http.get("http://broodjesapi.tuihackfridays.com/1/sandwiches" ).subscribe(
       response => this.items = response.json()
     );
 
